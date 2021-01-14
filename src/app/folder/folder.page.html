@@ -2,12 +2,16 @@
   <mgl-map
     #map
     [style]="'mapbox://styles/mapbox/streets-v9'"
-    [zoom]="[12]"
-    [minZoom]="9"
-    (load)="test($event,map)"
+    [zoom]="[14]"
+    [minZoom]="11"
+    [maxZoom]="20"
+    (load)="resizeMap($event,map)"
     [bearing]="90"
     [pitch]="0"
     [center]="[105.834160,21.027763]"
   >
+    <mgl-marker [lngLat]="[105.834160,21.027763]">
+      <div class="marker">HelloHelloHelloHelloHello</div>
+    </mgl-marker>
   </mgl-map>
 </div>
