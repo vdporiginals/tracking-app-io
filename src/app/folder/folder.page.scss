@@ -1,28 +1,16 @@
-ion-menu-button {
-  color: var(--ion-color-primary);
+
+
+.map_container {
+  position: relative;
+  height: 100% !important;
+  width: 100% !important;
 }
 
-#container {
-  text-align: center;
+mgl-map {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+#map {
 }

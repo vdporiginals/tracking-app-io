@@ -1,21 +1,13 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<div class="map_container">
+  <mgl-map
+    #map
+    [style]="'mapbox://styles/mapbox/streets-v9'"
+    [zoom]="[12]"
+    [minZoom]="9"
+    (load)="test($event,map)"
+    [bearing]="90"
+    [pitch]="0"
+    [center]="[105.834160,21.027763]"
+  >
+  </mgl-map>
+</div>
